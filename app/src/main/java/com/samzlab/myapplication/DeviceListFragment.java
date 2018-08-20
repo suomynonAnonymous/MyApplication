@@ -21,14 +21,14 @@ import java.util.ArrayList;
 
 public abstract class DeviceListFragment extends Fragment implements AbsListView.OnItemClickListener {
 
-public 
+public
     private final BroadcastReceiver bReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
             if (BluetoothDevice.ACTION_FOUND.equals(action)) {
                 BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-                Device
+                
 
             }
         }
